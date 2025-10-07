@@ -1,0 +1,14 @@
+:root{
+    --textColor: #000000;
+    --navColor: #525252;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FBFBFB;
+}
+.conteiner{
+    max-width: 1440px;
+    max-height: 2680px;
+}
