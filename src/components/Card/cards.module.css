@@ -2,41 +2,45 @@
     background-color: #FFFFFF;
     max-width: 1003px;
     max-height: 513px;
+    padding: 24px;
+    column-gap: 40px;
     position: relative;
-    margin: 24px;
 }
-.cards_row{
+.cards_conteiner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 40px;
+}
+.cards_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
 }
 .coffee_image{
-    width: 364px;
-    height: 465px;
-    padding: 32px;
-    margin: 24px 615px 24px 24px;
+    position: relative;
     background-color: #F5F1EF;
+    padding: 70px;
 }
 .coffee_image img{
-    width: 300px;
-    height: 300px;
-
-    object-fit: cover;
-}
-.badge {
-    width: 109px;
-    height: 25px;
-    gap: 16px;
+    width: 219.83975219726562;
+    height: 324.0384521484375;
     opacity: 1;
-    padding: 4px 16px;     
-    background-color: #D32E00;
-    color: var(--bgColor);
-    position: absolute; 
-    align-items: center;
-    top: 0;
-    left: 20px;
+    top: -12.02px;
+    left: 40.38px;
 }
-.badge span{
+.badge{
+    position: absolute;
+    background-color: #D32E00;
     text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    top: 0px;
+    left: 0px;
+}
+.badge{
+    color: var(--bgColor);
+    padding: 4px 16px;
 }

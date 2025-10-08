@@ -11,4 +11,6 @@ body{
 .conteiner{
     max-width: 1440px;
     max-height: 2680px;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }

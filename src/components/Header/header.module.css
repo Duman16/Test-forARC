@@ -1,8 +1,7 @@
 .header{
     background-color: #FFFFFF;
-    padding: 12px 24px 12px;
+    padding: 12px ;
     box-shadow: 0px 0px 8px 0px #00000026;
-
 }
 .header_row{
     display: flex;

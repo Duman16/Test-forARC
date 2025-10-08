@@ -4,8 +4,14 @@ import styles from'./main.module.css'
 
 
 const Main = () => {
-    return ( 
-    <><Card /><div className={styles.container}></div></>
+    return ( <section className={styles.main}>
+                
+                <div className="container">
+                    {/* <Cart /> */}
+                    <p> Каталог товаров</p>
+                    <Card />
+                </div>
+            </section>
 );}
  
 export default Main;
