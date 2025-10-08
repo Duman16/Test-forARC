@@ -1,0 +1,10 @@
+.container{
+    width: 1440;
+    height: 2680;
+    column-gap: 11px;
+    opacity: 1;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 128px;
+    padding-bottom: 667px;
+}

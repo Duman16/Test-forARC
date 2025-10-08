@@ -1,0 +1,42 @@
+.cards{
+    background-color: #FFFFFF;
+    max-width: 1003px;
+    max-height: 513px;
+    position: relative;
+    margin: 24px;
+}
+.cards_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}
+.coffee_image{
+    width: 364px;
+    height: 465px;
+    padding: 32px;
+    margin: 24px 615px 24px 24px;
+    background-color: #F5F1EF;
+}
+.coffee_image img{
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+}
+.badge {
+    width: 109px;
+    height: 25px;
+    gap: 16px;
+    opacity: 1;
+    padding: 4px 16px;     
+    background-color: #D32E00;
+    color: var(--bgColor);
+    position: absolute; 
+    align-items: center;
+    top: 0;
+    left: 20px;
+}
+.badge span{
+    text-transform: uppercase;
+}

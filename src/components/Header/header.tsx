@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./header.css";
+import styles from "./header.module.css";
 
 function Header() {
   const [language, setLanguage] = useState<"RU" | "ENG" | "KZ">("RU");
@@ -11,12 +11,12 @@ function Header() {
   };
 
   return (
-    <header className="header">
+    <header className={styles.header}>
       <div className="container">
-        <div className="header_row">
-          <div className="header_logo">COFFEINO</div>
+        <div className={styles.header_row}>
+          <div className={styles.header_logo}>COFFEINO</div>
 
-          <div className="header_nav">
+          <div className={styles.header_nav}>
             <ul>
               <li><a href="#!">{language === "RU" ? "Главная" : language === "ENG" ? "Home" : "Басты бет"}</a></li>
               <li><a href="#!">{language === "RU" ? "Каталог" : language === "ENG" ? "Catalog" : "Каталог"}</a></li>
@@ -26,15 +26,15 @@ function Header() {
             </ul>
           </div>
 
-          <div className="header_lang">
-            <div className="lang_dropdown">
+          <div className={styles.header_lang}>
+            <div className={styles.lang_dropdown}>
               <button
-                className="lang_button"
+                className={styles.lang_button}
                 onClick={() => setIsOpen((prev) => !prev)}>
                 {language} ⌄
               </button>
               {isOpen && (
-                <ul className="lang_menu">
+                <ul className={styles.lang_menu}>
                   <li onClick={() => handleSelect("ENG")}>ENG</li>
                   <li onClick={() => handleSelect("RU")}>RU</li>
                   <li onClick={() => handleSelect("KZ")}>KZ</li>
