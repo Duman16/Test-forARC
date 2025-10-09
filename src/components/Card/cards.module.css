@@ -1,46 +1,219 @@
 .cards{
-    background-color: #FFFFFF;
-    max-width: 1003px;
-    max-height: 513px;
-    padding: 24px;
-    column-gap: 40px;
+    background-color: #FAFAFA;
+    padding: 60px 0;
     position: relative;
+    width: 1003px;
+    height: 513px;
+    opacity: 1;
+    gap: 40px;
+    padding: 24px;
+
 }
-.cards_conteiner{
+
+.section_title{
+    font-size: 28px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0 0 40px 0;
+    padding: 0 20px;
+}
+
+.cards_container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
+.card_item{
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+}
+
 .cards_row{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
 }
+
 .coffee_image{
     position: relative;
     background-color: #F5F1EF;
-    padding: 70px;
+    padding: 50px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
 }
+
 .coffee_image img{
-    width: 219.83975219726562;
-    height: 324.0384521484375;
-    opacity: 1;
-    top: -12.02px;
-    left: 40.38px;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    display: block;
 }
+
 .badge{
     position: absolute;
     background-color: #D32E00;
     text-transform: uppercase;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    top: 0px;
-    left: 0px;
+    font-weight: 600;
+    font-size: 11px;
+    top: 0;
+    left: 0;
+    color: #FFFFFF;
+    padding: 6px 16px;
+    letter-spacing: 1.5px;
 }
-.badge{
-    color: var(--bgColor);
-    padding: 4px 16px;
+
+.coffee_text{
+    flex: 1;
+    padding: 8px 0;
+    min-width: 0;
+}
+
+.article{
+    font-size: 12px;
+    color: #AAAAAA;
+    margin: 0 0 6px 0;
+    font-weight: 400;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: 400;
+    color: #2C2C2C;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.3px;
+}
+
+.description{
+    font-size: 13px;
+    line-height: 1.8;
+    color: #777777;
+    margin: 0 0 20px 0;
+}
+
+.weight_selector{
+    display: inline-block;
+    background-color: #3D3D3D;
+    color: #FFFFFF;
+    padding: 9px 18px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    font-weight: 500;
+}
+
+.details{
+    margin-bottom: 28px;
+}
+
+.detail_row{
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.detail_row span:first-child{
+    color: #AAAAAA;
+    min-width: 210px;
+    font-weight: 400;
+}
+
+.detail_row span:last-child{
+    color: #2C2C2C;
+    font-weight: 400;
+}
+
+.stars{
+    margin-left: 10px;
+    color: #2C2C2C;
+    font-size: 13px;
+}
+
+.price_section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price{
+    font-size: 22px;
+    font-weight: 600;
+    color: #2C2C2C;
+    margin-right: 12px;
+}
+
+.delete_btn,
+.add_btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+    padding: 8px;
+}
+
+.delete_btn{
+    color: #D32E00;
+}
+
+.add_btn{
+    color: #2C2C2C;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.delete_btn:hover,
+.add_btn:hover{
+    opacity: 0.6;
+}
+
+.quantity{
+    background-color: transparent;
+    border: 1px solid #E5E5E5;
+    padding: 6px 14px;
+    font-size: 15px;
+    min-width: 45px;
+    text-align: center;
+    color: #2C2C2C;
+    border-radius: 2px;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .coffee_image{
+        min-width: 350px;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards_row{
+        flex-direction: column;
+    }
+    
+    .coffee_image{
+        min-width: 100%;
+        padding: 40px;
+    }
+    
+    .coffee_text{
+        padding: 30px 0;
+    }
+    
+    .detail_row span:first-child{
+        min-width: 180px;
+    }
 }
