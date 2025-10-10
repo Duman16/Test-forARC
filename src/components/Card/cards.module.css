@@ -1,219 +1,197 @@
-.cards{
-    background-color: #FAFAFA;
-    padding: 60px 0;
+.cards {
+    padding: 20px 0;
     position: relative;
-    width: 1003px;
-    height: 513px;
-    opacity: 1;
-    gap: 40px;
-    padding: 24px;
-
+    background-color: #FAFAFA;
 }
 
-.section_title{
-    font-size: 28px;
-    font-weight: 400;
-    color: #333333;
-    margin: 0 0 40px 0;
-    padding: 0 20px;
-}
-
-.cards_container{
+.cards_container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 16px;
 }
 
-.card_item{
+.card_item {
+    width: 100%;
+    max-width: 900px; 
+    min-height: 400px;
     background-color: #FFFFFF;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    border-radius: 8px; 
+    margin: 0 auto;
 }
 
-.cards_row{
+.cards_row {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 40px;
+    gap: 24px; 
+    width: 100%;
 }
 
-.coffee_image{
+.coffee_image {
     position: relative;
     background-color: #F5F1EF;
-    padding: 50px;
+    padding: 40px; 
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 400px;
+    width: 300px; 
+    min-height: 300px; 
 }
 
-.coffee_image img{
+.coffee_image img {
     width: 100%;
-    max-width: 260px;
+    max-width: 250px; 
     height: auto;
     display: block;
 }
 
-.badge{
+.badge {
     position: absolute;
-    background-color: #D32E00;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 11px;
     top: 0;
     left: 0;
-    color: #FFFFFF;
-    padding: 6px 16px;
-    letter-spacing: 1.5px;
-}
-
-.coffee_text{
-    flex: 1;
-    padding: 8px 0;
-    min-width: 0;
-}
-
-.article{
-    font-size: 12px;
-    color: #AAAAAA;
-    margin: 0 0 6px 0;
-    font-weight: 400;
-}
-
-.title{
-    font-size: 28px;
-    font-weight: 400;
-    color: #2C2C2C;
-    margin: 0 0 20px 0;
-    letter-spacing: -0.3px;
-}
-
-.description{
-    font-size: 13px;
-    line-height: 1.8;
-    color: #777777;
-    margin: 0 0 20px 0;
-}
-
-.weight_selector{
-    display: inline-block;
-    background-color: #3D3D3D;
-    color: #FFFFFF;
-    padding: 9px 18px;
-    font-size: 12px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    border: none;
+    width: 109px;
+    height: 25px;
+    background-color: #D32E00;
+    color: var(--bgColor);
+    font-size: 14px;
     font-weight: 500;
-}
-
-.details{
-    margin-bottom: 28px;
-}
-
-.detail_row{
-    display: flex;
-    margin-bottom: 8px;
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-.detail_row span:first-child{
-    color: #AAAAAA;
-    min-width: 210px;
-    font-weight: 400;
-}
-
-.detail_row span:last-child{
-    color: #2C2C2C;
-    font-weight: 400;
-}
-
-.stars{
-    margin-left: 10px;
-    color: #2C2C2C;
-    font-size: 13px;
-}
-
-.price_section{
-    display: flex;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    display: flex;
 }
 
-.price{
-    font-size: 22px;
-    font-weight: 600;
-    color: #2C2C2C;
-    margin-right: 12px;
+.coffee_text {
+    flex: 1;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 24px; 
+    width: 551;
+    height: 465;
+    opacity: 1;
 }
 
-.delete_btn,
-.add_btn{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
+.article {
+    font-size: 10px;
+    color: #523A29BF;
+    top: 0px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 20px; /* Уменьшен размер заголовка */
+    font-weight: 500;
+    color: #523A29;
+    margin-bottom: 12px 0;
+}
+
+.description {
+    font-size: 14px; /* Уменьшен размер описания */
+    line-height: 1.4;
+    color: #A6A19D;
+    margin: 0;
+}
+
+.weight {
+    font-size: 12px; /* Уменьшен размер текста веса */
+    color: var(--bgColor);
+    background-color: #523A29 ;
+    margin: 24px 0;
+    width: 64px;
+    height: 23px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.2s;
-    padding: 8px;
+
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    column-gap: 6px; 
+    font-size: 14px; 
 }
 
-.delete_btn{
-    color: #D32E00;
+.detail_row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 10px; 
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #523A29BF;
+
 }
 
-.add_btn{
-    color: #2C2C2C;
-    font-size: 24px;
-    font-weight: 300;
+.detail_row span:first-child {
+    color: #A6A19D; 
+    font-weight: 400;
+    flex-shrink: 0; 
+    min-width: 150px;
 }
 
-.delete_btn:hover,
-.add_btn:hover{
-    opacity: 0.6;
+.detail_row span:last-child {
+    color: #523A29; /* Цвет для значения */
+    font-weight: 500; /* Полужирный текст */
 }
 
-.quantity{
-    background-color: transparent;
-    border: 1px solid #E5E5E5;
-    padding: 6px 14px;
-    font-size: 15px;
-    min-width: 45px;
-    text-align: center;
-    color: #2C2C2C;
-    border-radius: 2px;
+.price_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #523A29;
+}
+
+.btnAddToCart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #523A29;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    font-size: 12px; /* Уменьшен размер текста кнопки */
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnAddToCart:hover {
+    background-color: #6B4F3D;
 }
 
 /* Адаптивность */
-@media (max-width: 1024px) {
-    .coffee_image{
-        min-width: 350px;
-        padding: 40px;
-    }
-}
-
 @media (max-width: 768px) {
-    .cards_row{
+    .cards_row {
         flex-direction: column;
+        gap: 16px;
     }
-    
-    .coffee_image{
-        min-width: 100%;
-        padding: 40px;
+
+    .coffee_image {
+        width: 100%;
+        min-height: 200px;
     }
-    
-    .coffee_text{
-        padding: 30px 0;
-    }
-    
-    .detail_row span:first-child{
-        min-width: 180px;
+
+    .coffee_text {
+        padding: 0;
     }
 }

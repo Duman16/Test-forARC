@@ -1,11 +1,15 @@
-.main{
-    max-width: 1440;
-    max-height: 2680;
+.main {
+    max-width: 1440px; 
+    max-height: 2680px; 
     column-gap: 11px;
     opacity: 1;
     padding-top: 60px;
     padding-bottom: 132px;
+    display: flex; 
+    justify-content: flex-start; 
 }
-.p{
-    
+
+.Catalog {
+    margin-bottom: 0;
+    margin-left: 24px;
 }

@@ -8,7 +8,7 @@ const Main = () => {
                 
                 <div className="container">
                     {/* <Cart /> */}
-                    <p> Каталог товаров</p>
+                    <p className={styles.Catalog}> Каталог товаров</p>
                     <Card />
                 </div>
             </section>
